@@ -34,11 +34,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xeldar/rigup"
+    "url": "https://github.com/XeldarAlz/rigup"
   },
-  "homepage": "https://github.com/xeldar/rigup#readme",
+  "homepage": "https://github.com/XeldarAlz/rigup#readme",
   "bugs": {
-    "url": "https://github.com/xeldar/rigup/issues"
+    "url": "https://github.com/XeldarAlz/rigup/issues"
   },
   "engines": {
     "node": ">=18"

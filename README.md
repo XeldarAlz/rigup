@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/rigup)](https://www.npmjs.com/package/rigup)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![CI](https://github.com/xeldar/rigup/actions/workflows/ci.yml/badge.svg)](https://github.com/xeldar/rigup/actions/workflows/ci.yml)
+[![CI](https://github.com/XeldarAlz/rigup/actions/workflows/ci.yml/badge.svg)](https://github.com/XeldarAlz/rigup/actions/workflows/ci.yml)
 [![Node.js](https://img.shields.io/node/v/rigup)](https://nodejs.org)
 
 **rigup** is a curated registry of agents, skills, hooks, CLAUDE.md templates, MCP server configs, and settings for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Files are **copied** into your project (not installed as dependencies), so you own and can edit everything.
@@ -112,7 +112,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Contributing Items to the Registry
 
-Want to share your agents, skills, or hooks with the community? Submit them to the [rigup-registry](https://github.com/xeldar/rigup-registry).
+Want to share your agents, skills, or hooks with the community? Submit them to the [rigup-registry](https://github.com/XeldarAlz/rigup-registry).
 
 ## Philosophy
 
