@@ -1,0 +1,31 @@
+{
+  "name": "permissive",
+  "type": "settings",
+  "version": "1.0.0",
+  "description": "Permissive dev — auto-allow safe operations",
+  "author": "xeldar",
+  "tags": ["permissions", "permissive", "development", "fast"],
+  "files": [],
+  "dependencies": [],
+  "conflicts": ["strict", "security-hardened"],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "Read(*)",
+        "Edit(*)",
+        "Write(*)",
+        "Glob(*)",
+        "Grep(*)",
+        "Bash(git *)",
+        "Bash(npm *)",
+        "Bash(pnpm *)",
+        "Bash(npx *)",
+        "Bash(node *)",
+        "Bash(ls *)",
+        "Bash(cat *)",
+        "Bash(echo *)"
+      ],
+      "deny": []
+    }
+  }
+}

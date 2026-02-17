@@ -1,0 +1,30 @@
+{
+  "name": "security-hardened",
+  "type": "settings",
+  "version": "1.0.0",
+  "description": "Security-hardened — block network access, restrict bash, deny dangerous operations",
+  "author": "xeldar",
+  "tags": ["security", "hardened", "restricted", "production"],
+  "files": [],
+  "dependencies": [],
+  "conflicts": ["permissive"],
+  "settings": {
+    "permissions": {
+      "allow": [
+        "Read(*)",
+        "Glob(*)",
+        "Grep(*)"
+      ],
+      "deny": [
+        "Bash(curl *)",
+        "Bash(wget *)",
+        "Bash(ssh *)",
+        "Bash(rm -rf *)",
+        "Bash(git push --force*)",
+        "Bash(git reset --hard*)",
+        "Bash(npm publish*)",
+        "Bash(npx *)"
+      ]
+    }
+  }
+}

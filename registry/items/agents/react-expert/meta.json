@@ -1,0 +1,13 @@
+{
+  "name": "react-expert",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "React/Next.js specialist — components, hooks, RSC, performance",
+  "author": "xeldar",
+  "tags": ["react", "nextjs", "frontend", "components", "hooks"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/react-expert.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

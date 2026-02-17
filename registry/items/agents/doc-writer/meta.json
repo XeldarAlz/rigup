@@ -1,0 +1,13 @@
+{
+  "name": "doc-writer",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "Documentation generator — JSDoc, README, API docs",
+  "author": "xeldar",
+  "tags": ["documentation", "jsdoc", "readme", "api-docs"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/doc-writer.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

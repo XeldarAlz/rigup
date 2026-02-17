@@ -1,0 +1,13 @@
+{
+  "name": "tdd-driver",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "Test-driven development — write test first, implement, refactor",
+  "author": "xeldar",
+  "tags": ["tdd", "testing", "development", "quality"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/tdd-driver.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

@@ -1,0 +1,28 @@
+{
+  "name": "session-logger",
+  "type": "hook",
+  "version": "1.0.0",
+  "description": "Notification — log session activity summaries",
+  "author": "xeldar",
+  "tags": ["logging", "session", "tracking", "audit"],
+  "files": [
+    { "path": "hook.sh", "target": ".claude/hooks/session-logger.sh" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "settings": {
+    "hooks": {
+      "Stop": [
+        {
+          "matcher": {},
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash .claude/hooks/session-logger.sh \"$TOOL_INPUT\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

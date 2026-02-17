@@ -1,0 +1,13 @@
+{
+  "name": "scaffold-api",
+  "type": "skill",
+  "version": "1.0.0",
+  "description": "Scaffold REST endpoints — /scaffold-api [resource]",
+  "author": "xeldar",
+  "tags": ["api", "rest", "scaffold", "backend"],
+  "files": [
+    { "path": "skill.md", "target": ".claude/skills/scaffold-api.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

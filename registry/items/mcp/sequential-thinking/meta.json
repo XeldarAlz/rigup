@@ -1,0 +1,17 @@
+{
+  "name": "sequential-thinking",
+  "type": "mcp",
+  "version": "1.0.0",
+  "description": "Step-by-step reasoning MCP server",
+  "author": "xeldar",
+  "tags": ["reasoning", "thinking", "planning"],
+  "files": [],
+  "dependencies": [],
+  "conflicts": [],
+  "mcp": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/sequential-thinking-server"]
+    }
+  }
+}

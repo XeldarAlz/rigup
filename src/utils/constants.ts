@@ -2,7 +2,7 @@ import { join } from "node:path";
 import { homedir } from "node:os";
 
 export const REGISTRY_BASE_URL =
-  "https://raw.githubusercontent.com/XeldarAlz/rigup-registry/main";
+  "https://raw.githubusercontent.com/XeldarAlz/rigup/main/registry";
 
 export const DEFAULT_CACHE_TTL = 60 * 60 * 1000; // 1 hour in ms
 

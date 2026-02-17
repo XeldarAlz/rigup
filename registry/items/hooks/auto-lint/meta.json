@@ -1,0 +1,30 @@
+{
+  "name": "auto-lint",
+  "type": "hook",
+  "version": "1.0.0",
+  "description": "PostToolUse — auto-run linter on Edit/Write",
+  "author": "xeldar",
+  "tags": ["lint", "auto", "quality", "formatting"],
+  "files": [
+    { "path": "hook.sh", "target": ".claude/hooks/auto-lint.sh" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "settings": {
+    "hooks": {
+      "PostToolUse": [
+        {
+          "matcher": {
+            "tool_name": "Edit|Write"
+          },
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash .claude/hooks/auto-lint.sh \"$TOOL_INPUT\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

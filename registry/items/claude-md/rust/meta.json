@@ -1,0 +1,14 @@
+{
+  "name": "rust",
+  "type": "claude-md",
+  "version": "1.0.0",
+  "description": "Rust project conventions",
+  "author": "xeldar",
+  "tags": ["rust", "conventions", "guidelines"],
+  "files": [
+    { "path": "template.md", "target": ".claude/templates/rust.md" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "claudeMd": "## Rust Conventions\n\n- Use `Result<T, E>` for fallible operations, `Option<T>` for optional values\n- Prefer `thiserror` for library errors, `anyhow` for application errors\n- Use `clippy` with pedantic lints\n- Prefer iterators over manual loops\n- Use `derive` macros generously (Debug, Clone, PartialEq)\n- Keep `unsafe` blocks minimal and well-documented\n- Use `cargo fmt` for formatting"
+}

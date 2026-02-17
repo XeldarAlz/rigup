@@ -1,0 +1,14 @@
+{
+  "name": "typescript",
+  "type": "claude-md",
+  "version": "1.0.0",
+  "description": "TypeScript project conventions",
+  "author": "xeldar",
+  "tags": ["typescript", "conventions", "guidelines"],
+  "files": [
+    { "path": "template.md", "target": ".claude/templates/typescript.md" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "claudeMd": "## TypeScript Conventions\n\n- Use strict TypeScript (`strict: true` in tsconfig)\n- Prefer `interface` over `type` for object shapes\n- Use discriminated unions for state management\n- No `any` — use `unknown` and narrow with type guards\n- Use `satisfies` operator for type-safe object literals\n- Prefer `const` assertions for literal types\n- Use barrel exports (`index.ts`) for public APIs\n- Keep types close to the code that uses them\n- Use generic constraints to make reusable utilities type-safe"
+}

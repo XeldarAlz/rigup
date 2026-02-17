@@ -1,0 +1,13 @@
+{
+  "name": "fix-issue",
+  "type": "skill",
+  "version": "1.0.0",
+  "description": "Fix GitHub issue end-to-end — /fix-issue [number]",
+  "author": "xeldar",
+  "tags": ["github", "issues", "bugfix", "workflow"],
+  "files": [
+    { "path": "skill.md", "target": ".claude/skills/fix-issue.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

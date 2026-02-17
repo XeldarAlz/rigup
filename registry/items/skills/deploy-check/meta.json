@@ -1,0 +1,13 @@
+{
+  "name": "deploy-check",
+  "type": "skill",
+  "version": "1.0.0",
+  "description": "Pre-deployment checklist — /deploy-check",
+  "author": "xeldar",
+  "tags": ["deployment", "checklist", "ci-cd", "production"],
+  "files": [
+    { "path": "skill.md", "target": ".claude/skills/deploy-check.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

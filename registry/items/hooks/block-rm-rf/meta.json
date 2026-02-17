@@ -1,0 +1,30 @@
+{
+  "name": "block-rm-rf",
+  "type": "hook",
+  "version": "1.0.0",
+  "description": "PreToolUse — block destructive rm commands",
+  "author": "xeldar",
+  "tags": ["safety", "protection", "block", "destructive"],
+  "files": [
+    { "path": "hook.sh", "target": ".claude/hooks/block-rm-rf.sh" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "settings": {
+    "hooks": {
+      "PreToolUse": [
+        {
+          "matcher": {
+            "tool_name": "Bash"
+          },
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash .claude/hooks/block-rm-rf.sh \"$TOOL_INPUT\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

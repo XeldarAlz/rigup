@@ -1,0 +1,30 @@
+{
+  "name": "block-secrets",
+  "type": "hook",
+  "version": "1.0.0",
+  "description": "PreToolUse — block edits to .env, secrets, credentials",
+  "author": "xeldar",
+  "tags": ["security", "secrets", "protection", "block"],
+  "files": [
+    { "path": "hook.sh", "target": ".claude/hooks/block-secrets.sh" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "settings": {
+    "hooks": {
+      "PreToolUse": [
+        {
+          "matcher": {
+            "tool_name": "Edit|Write"
+          },
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash .claude/hooks/block-secrets.sh \"$TOOL_INPUT\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

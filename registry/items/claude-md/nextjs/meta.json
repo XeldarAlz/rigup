@@ -1,0 +1,14 @@
+{
+  "name": "nextjs",
+  "type": "claude-md",
+  "version": "1.0.0",
+  "description": "Next.js App Router specific conventions",
+  "author": "xeldar",
+  "tags": ["nextjs", "react", "app-router", "conventions"],
+  "files": [
+    { "path": "template.md", "target": ".claude/templates/nextjs.md" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "claudeMd": "## Next.js App Router Conventions\n\n- Use Server Components by default, add 'use client' only when needed\n- Colocate loading.tsx, error.tsx, not-found.tsx with page.tsx\n- Use Route Handlers (route.ts) for API endpoints\n- Fetch data in Server Components, not in client-side effects\n- Use Next.js Image component for all images\n- Use next/link for all internal navigation\n- Use Server Actions for form mutations\n- Keep client components small and leaf-level"
+}

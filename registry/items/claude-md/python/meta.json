@@ -1,0 +1,14 @@
+{
+  "name": "python",
+  "type": "claude-md",
+  "version": "1.0.0",
+  "description": "Python project conventions",
+  "author": "xeldar",
+  "tags": ["python", "conventions", "guidelines"],
+  "files": [
+    { "path": "template.md", "target": ".claude/templates/python.md" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "claudeMd": "## Python Conventions\n\n- Use type hints everywhere (Python 3.10+ syntax)\n- Format with ruff (or black + isort)\n- Use dataclasses or Pydantic for data structures\n- Prefer pathlib.Path over os.path\n- Use f-strings for string formatting\n- Follow PEP 8 naming: snake_case functions, PascalCase classes\n- Use `from __future__ import annotations` for forward references\n- Prefer list/dict comprehensions over map/filter"
+}

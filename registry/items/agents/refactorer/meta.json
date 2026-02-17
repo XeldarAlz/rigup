@@ -1,0 +1,13 @@
+{
+  "name": "refactorer",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "Safe refactoring — identifies smells, runs tests after changes",
+  "author": "xeldar",
+  "tags": ["refactoring", "code-quality", "clean-code"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/refactorer.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

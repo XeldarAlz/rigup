@@ -1,0 +1,31 @@
+{
+  "name": "auto-test",
+  "type": "hook",
+  "version": "1.0.0",
+  "description": "PostToolUse — run relevant tests after edits (async)",
+  "author": "xeldar",
+  "tags": ["test", "auto", "quality", "tdd"],
+  "files": [
+    { "path": "hook.sh", "target": ".claude/hooks/auto-test.sh" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "settings": {
+    "hooks": {
+      "PostToolUse": [
+        {
+          "matcher": {
+            "tool_name": "Edit|Write"
+          },
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash .claude/hooks/auto-test.sh \"$TOOL_INPUT\"",
+              "timeout": 30000
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

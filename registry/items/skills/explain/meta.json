@@ -1,0 +1,13 @@
+{
+  "name": "explain",
+  "type": "skill",
+  "version": "1.0.0",
+  "description": "Explain code with diagrams — /explain [file]",
+  "author": "xeldar",
+  "tags": ["documentation", "explain", "learning"],
+  "files": [
+    { "path": "skill.md", "target": ".claude/skills/explain.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

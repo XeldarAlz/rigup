@@ -1,0 +1,30 @@
+{
+  "name": "block-force-push",
+  "type": "hook",
+  "version": "1.0.0",
+  "description": "PreToolUse — block git push --force",
+  "author": "xeldar",
+  "tags": ["git", "safety", "protection", "block"],
+  "files": [
+    { "path": "hook.sh", "target": ".claude/hooks/block-force-push.sh" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "settings": {
+    "hooks": {
+      "PreToolUse": [
+        {
+          "matcher": {
+            "tool_name": "Bash"
+          },
+          "hooks": [
+            {
+              "type": "command",
+              "command": "bash .claude/hooks/block-force-push.sh \"$TOOL_INPUT\""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

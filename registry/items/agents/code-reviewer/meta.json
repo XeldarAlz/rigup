@@ -1,0 +1,13 @@
+{
+  "name": "code-reviewer",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "Code review agent — quality, security, best practices (read-only)",
+  "author": "xeldar",
+  "tags": ["review", "quality", "security", "best-practices"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/code-reviewer.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

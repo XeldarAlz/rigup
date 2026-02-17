@@ -1,0 +1,14 @@
+{
+  "name": "minimal",
+  "type": "claude-md",
+  "version": "1.0.0",
+  "description": "Minimal starter template",
+  "author": "xeldar",
+  "tags": ["minimal", "starter", "template"],
+  "files": [
+    { "path": "template.md", "target": ".claude/templates/minimal.md" }
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "claudeMd": "## Project Guidelines\n\n- Follow existing code style and patterns\n- Write tests for new features\n- Keep commits focused and well-described\n- Read code before modifying it"
+}

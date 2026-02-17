@@ -1,0 +1,13 @@
+{
+  "name": "commit",
+  "type": "skill",
+  "version": "1.0.0",
+  "description": "Smart conventional commit — /commit [message]",
+  "author": "xeldar",
+  "tags": ["git", "commit", "conventional-commits"],
+  "files": [
+    { "path": "skill.md", "target": ".claude/skills/commit.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

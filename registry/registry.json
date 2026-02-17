@@ -1,0 +1,790 @@
+{
+  "version": 1,
+  "updatedAt": "2026-02-17T18:52:57.237Z",
+  "items": [
+    {
+      "name": "code-reviewer",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "Code review agent — quality, security, best practices (read-only)",
+      "author": "xeldar",
+      "tags": [
+        "review",
+        "quality",
+        "security",
+        "best-practices"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/code-reviewer.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "debugger",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "Debugging specialist — diagnose root causes, minimal fixes",
+      "author": "xeldar",
+      "tags": [
+        "debug",
+        "diagnosis",
+        "bugfix",
+        "troubleshoot"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/debugger.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "doc-writer",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "Documentation generator — JSDoc, README, API docs",
+      "author": "xeldar",
+      "tags": [
+        "documentation",
+        "jsdoc",
+        "readme",
+        "api-docs"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/doc-writer.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "git-commit",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "Conventional commit creator — analyzes changes, structured messages",
+      "author": "xeldar",
+      "tags": [
+        "git",
+        "commit",
+        "conventional-commits"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/git-commit.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "react-expert",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "React/Next.js specialist — components, hooks, RSC, performance",
+      "author": "xeldar",
+      "tags": [
+        "react",
+        "nextjs",
+        "frontend",
+        "components",
+        "hooks"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/react-expert.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "refactorer",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "Safe refactoring — identifies smells, runs tests after changes",
+      "author": "xeldar",
+      "tags": [
+        "refactoring",
+        "code-quality",
+        "clean-code"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/refactorer.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "tdd-driver",
+      "type": "agent",
+      "version": "1.0.0",
+      "description": "Test-driven development — write test first, implement, refactor",
+      "author": "xeldar",
+      "tags": [
+        "tdd",
+        "testing",
+        "development",
+        "quality"
+      ],
+      "files": [
+        {
+          "path": "agent.md",
+          "target": ".claude/agents/tdd-driver.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "minimal",
+      "type": "claude-md",
+      "version": "1.0.0",
+      "description": "Minimal starter template",
+      "author": "xeldar",
+      "tags": [
+        "minimal",
+        "starter",
+        "template"
+      ],
+      "files": [
+        {
+          "path": "template.md",
+          "target": ".claude/templates/minimal.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "claudeMd": "## Project Guidelines\n\n- Follow existing code style and patterns\n- Write tests for new features\n- Keep commits focused and well-described\n- Read code before modifying it"
+    },
+    {
+      "name": "nextjs",
+      "type": "claude-md",
+      "version": "1.0.0",
+      "description": "Next.js App Router specific conventions",
+      "author": "xeldar",
+      "tags": [
+        "nextjs",
+        "react",
+        "app-router",
+        "conventions"
+      ],
+      "files": [
+        {
+          "path": "template.md",
+          "target": ".claude/templates/nextjs.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "claudeMd": "## Next.js App Router Conventions\n\n- Use Server Components by default, add 'use client' only when needed\n- Colocate loading.tsx, error.tsx, not-found.tsx with page.tsx\n- Use Route Handlers (route.ts) for API endpoints\n- Fetch data in Server Components, not in client-side effects\n- Use Next.js Image component for all images\n- Use next/link for all internal navigation\n- Use Server Actions for form mutations\n- Keep client components small and leaf-level"
+    },
+    {
+      "name": "python",
+      "type": "claude-md",
+      "version": "1.0.0",
+      "description": "Python project conventions",
+      "author": "xeldar",
+      "tags": [
+        "python",
+        "conventions",
+        "guidelines"
+      ],
+      "files": [
+        {
+          "path": "template.md",
+          "target": ".claude/templates/python.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "claudeMd": "## Python Conventions\n\n- Use type hints everywhere (Python 3.10+ syntax)\n- Format with ruff (or black + isort)\n- Use dataclasses or Pydantic for data structures\n- Prefer pathlib.Path over os.path\n- Use f-strings for string formatting\n- Follow PEP 8 naming: snake_case functions, PascalCase classes\n- Use `from __future__ import annotations` for forward references\n- Prefer list/dict comprehensions over map/filter"
+    },
+    {
+      "name": "rust",
+      "type": "claude-md",
+      "version": "1.0.0",
+      "description": "Rust project conventions",
+      "author": "xeldar",
+      "tags": [
+        "rust",
+        "conventions",
+        "guidelines"
+      ],
+      "files": [
+        {
+          "path": "template.md",
+          "target": ".claude/templates/rust.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "claudeMd": "## Rust Conventions\n\n- Use `Result<T, E>` for fallible operations, `Option<T>` for optional values\n- Prefer `thiserror` for library errors, `anyhow` for application errors\n- Use `clippy` with pedantic lints\n- Prefer iterators over manual loops\n- Use `derive` macros generously (Debug, Clone, PartialEq)\n- Keep `unsafe` blocks minimal and well-documented\n- Use `cargo fmt` for formatting"
+    },
+    {
+      "name": "typescript",
+      "type": "claude-md",
+      "version": "1.0.0",
+      "description": "TypeScript project conventions",
+      "author": "xeldar",
+      "tags": [
+        "typescript",
+        "conventions",
+        "guidelines"
+      ],
+      "files": [
+        {
+          "path": "template.md",
+          "target": ".claude/templates/typescript.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "claudeMd": "## TypeScript Conventions\n\n- Use strict TypeScript (`strict: true` in tsconfig)\n- Prefer `interface` over `type` for object shapes\n- Use discriminated unions for state management\n- No `any` — use `unknown` and narrow with type guards\n- Use `satisfies` operator for type-safe object literals\n- Prefer `const` assertions for literal types\n- Use barrel exports (`index.ts`) for public APIs\n- Keep types close to the code that uses them\n- Use generic constraints to make reusable utilities type-safe"
+    },
+    {
+      "name": "auto-lint",
+      "type": "hook",
+      "version": "1.0.0",
+      "description": "PostToolUse — auto-run linter on Edit/Write",
+      "author": "xeldar",
+      "tags": [
+        "lint",
+        "auto",
+        "quality",
+        "formatting"
+      ],
+      "files": [
+        {
+          "path": "hook.sh",
+          "target": ".claude/hooks/auto-lint.sh"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "settings": {
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": {
+                "tool_name": "Edit|Write"
+              },
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "bash .claude/hooks/auto-lint.sh \"$TOOL_INPUT\""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "auto-test",
+      "type": "hook",
+      "version": "1.0.0",
+      "description": "PostToolUse — run relevant tests after edits (async)",
+      "author": "xeldar",
+      "tags": [
+        "test",
+        "auto",
+        "quality",
+        "tdd"
+      ],
+      "files": [
+        {
+          "path": "hook.sh",
+          "target": ".claude/hooks/auto-test.sh"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "settings": {
+        "hooks": {
+          "PostToolUse": [
+            {
+              "matcher": {
+                "tool_name": "Edit|Write"
+              },
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "bash .claude/hooks/auto-test.sh \"$TOOL_INPUT\"",
+                  "timeout": 30000
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "block-force-push",
+      "type": "hook",
+      "version": "1.0.0",
+      "description": "PreToolUse — block git push --force",
+      "author": "xeldar",
+      "tags": [
+        "git",
+        "safety",
+        "protection",
+        "block"
+      ],
+      "files": [
+        {
+          "path": "hook.sh",
+          "target": ".claude/hooks/block-force-push.sh"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": {
+                "tool_name": "Bash"
+              },
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "bash .claude/hooks/block-force-push.sh \"$TOOL_INPUT\""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "block-rm-rf",
+      "type": "hook",
+      "version": "1.0.0",
+      "description": "PreToolUse — block destructive rm commands",
+      "author": "xeldar",
+      "tags": [
+        "safety",
+        "protection",
+        "block",
+        "destructive"
+      ],
+      "files": [
+        {
+          "path": "hook.sh",
+          "target": ".claude/hooks/block-rm-rf.sh"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": {
+                "tool_name": "Bash"
+              },
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "bash .claude/hooks/block-rm-rf.sh \"$TOOL_INPUT\""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "block-secrets",
+      "type": "hook",
+      "version": "1.0.0",
+      "description": "PreToolUse — block edits to .env, secrets, credentials",
+      "author": "xeldar",
+      "tags": [
+        "security",
+        "secrets",
+        "protection",
+        "block"
+      ],
+      "files": [
+        {
+          "path": "hook.sh",
+          "target": ".claude/hooks/block-secrets.sh"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "settings": {
+        "hooks": {
+          "PreToolUse": [
+            {
+              "matcher": {
+                "tool_name": "Edit|Write"
+              },
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "bash .claude/hooks/block-secrets.sh \"$TOOL_INPUT\""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "session-logger",
+      "type": "hook",
+      "version": "1.0.0",
+      "description": "Notification — log session activity summaries",
+      "author": "xeldar",
+      "tags": [
+        "logging",
+        "session",
+        "tracking",
+        "audit"
+      ],
+      "files": [
+        {
+          "path": "hook.sh",
+          "target": ".claude/hooks/session-logger.sh"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "settings": {
+        "hooks": {
+          "Stop": [
+            {
+              "matcher": {},
+              "hooks": [
+                {
+                  "type": "command",
+                  "command": "bash .claude/hooks/session-logger.sh \"$TOOL_INPUT\""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "context7",
+      "type": "mcp",
+      "version": "1.0.0",
+      "description": "Context7 MCP for up-to-date library documentation",
+      "author": "xeldar",
+      "tags": [
+        "documentation",
+        "libraries",
+        "context",
+        "up-to-date"
+      ],
+      "files": [],
+      "dependencies": [],
+      "conflicts": [],
+      "mcp": {
+        "context7": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic/context7-mcp-server"
+          ]
+        }
+      }
+    },
+    {
+      "name": "github-tools",
+      "type": "mcp",
+      "version": "1.0.0",
+      "description": "GitHub MCP server for issues and PRs",
+      "author": "xeldar",
+      "tags": [
+        "github",
+        "issues",
+        "pull-requests",
+        "collaboration"
+      ],
+      "files": [],
+      "dependencies": [],
+      "conflicts": [],
+      "mcp": {
+        "github": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic/github-mcp-server"
+          ],
+          "env": {
+            "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+          }
+        }
+      }
+    },
+    {
+      "name": "sequential-thinking",
+      "type": "mcp",
+      "version": "1.0.0",
+      "description": "Step-by-step reasoning MCP server",
+      "author": "xeldar",
+      "tags": [
+        "reasoning",
+        "thinking",
+        "planning"
+      ],
+      "files": [],
+      "dependencies": [],
+      "conflicts": [],
+      "mcp": {
+        "sequential-thinking": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic/sequential-thinking-server"
+          ]
+        }
+      }
+    },
+    {
+      "name": "permissive",
+      "type": "settings",
+      "version": "1.0.0",
+      "description": "Permissive dev — auto-allow safe operations",
+      "author": "xeldar",
+      "tags": [
+        "permissions",
+        "permissive",
+        "development",
+        "fast"
+      ],
+      "files": [],
+      "dependencies": [],
+      "conflicts": [
+        "strict",
+        "security-hardened"
+      ],
+      "settings": {
+        "permissions": {
+          "allow": [
+            "Read(*)",
+            "Edit(*)",
+            "Write(*)",
+            "Glob(*)",
+            "Grep(*)",
+            "Bash(git *)",
+            "Bash(npm *)",
+            "Bash(pnpm *)",
+            "Bash(npx *)",
+            "Bash(node *)",
+            "Bash(ls *)",
+            "Bash(cat *)",
+            "Bash(echo *)"
+          ],
+          "deny": []
+        }
+      }
+    },
+    {
+      "name": "security-hardened",
+      "type": "settings",
+      "version": "1.0.0",
+      "description": "Security-hardened — block network access, restrict bash, deny dangerous operations",
+      "author": "xeldar",
+      "tags": [
+        "security",
+        "hardened",
+        "restricted",
+        "production"
+      ],
+      "files": [],
+      "dependencies": [],
+      "conflicts": [
+        "permissive"
+      ],
+      "settings": {
+        "permissions": {
+          "allow": [
+            "Read(*)",
+            "Glob(*)",
+            "Grep(*)"
+          ],
+          "deny": [
+            "Bash(curl *)",
+            "Bash(wget *)",
+            "Bash(ssh *)",
+            "Bash(rm -rf *)",
+            "Bash(git push --force*)",
+            "Bash(git reset --hard*)",
+            "Bash(npm publish*)",
+            "Bash(npx *)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "strict",
+      "type": "settings",
+      "version": "1.0.0",
+      "description": "Strict permissions — explicit approval required for all actions",
+      "author": "xeldar",
+      "tags": [
+        "permissions",
+        "strict",
+        "security",
+        "safe"
+      ],
+      "files": [],
+      "dependencies": [],
+      "conflicts": [
+        "permissive"
+      ],
+      "settings": {
+        "permissions": {
+          "allow": [],
+          "deny": [
+            "Bash(*)",
+            "Edit(*)",
+            "Write(*)"
+          ]
+        }
+      }
+    },
+    {
+      "name": "commit",
+      "type": "skill",
+      "version": "1.0.0",
+      "description": "Smart conventional commit — /commit [message]",
+      "author": "xeldar",
+      "tags": [
+        "git",
+        "commit",
+        "conventional-commits"
+      ],
+      "files": [
+        {
+          "path": "skill.md",
+          "target": ".claude/skills/commit.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "deploy-check",
+      "type": "skill",
+      "version": "1.0.0",
+      "description": "Pre-deployment checklist — /deploy-check",
+      "author": "xeldar",
+      "tags": [
+        "deployment",
+        "checklist",
+        "ci-cd",
+        "production"
+      ],
+      "files": [
+        {
+          "path": "skill.md",
+          "target": ".claude/skills/deploy-check.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "explain",
+      "type": "skill",
+      "version": "1.0.0",
+      "description": "Explain code with diagrams — /explain [file]",
+      "author": "xeldar",
+      "tags": [
+        "documentation",
+        "explain",
+        "learning"
+      ],
+      "files": [
+        {
+          "path": "skill.md",
+          "target": ".claude/skills/explain.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "fix-issue",
+      "type": "skill",
+      "version": "1.0.0",
+      "description": "Fix GitHub issue end-to-end — /fix-issue [number]",
+      "author": "xeldar",
+      "tags": [
+        "github",
+        "issues",
+        "bugfix",
+        "workflow"
+      ],
+      "files": [
+        {
+          "path": "skill.md",
+          "target": ".claude/skills/fix-issue.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "pr-review",
+      "type": "skill",
+      "version": "1.0.0",
+      "description": "PR review workflow — /pr-review [number]",
+      "author": "xeldar",
+      "tags": [
+        "github",
+        "pr",
+        "review",
+        "code-quality"
+      ],
+      "files": [
+        {
+          "path": "skill.md",
+          "target": ".claude/skills/pr-review.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    },
+    {
+      "name": "scaffold-api",
+      "type": "skill",
+      "version": "1.0.0",
+      "description": "Scaffold REST endpoints — /scaffold-api [resource]",
+      "author": "xeldar",
+      "tags": [
+        "api",
+        "rest",
+        "scaffold",
+        "backend"
+      ],
+      "files": [
+        {
+          "path": "skill.md",
+          "target": ".claude/skills/scaffold-api.md"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": []
+    }
+  ]
+}

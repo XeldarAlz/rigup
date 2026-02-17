@@ -1,0 +1,13 @@
+{
+  "name": "git-commit",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "Conventional commit creator — analyzes changes, structured messages",
+  "author": "xeldar",
+  "tags": ["git", "commit", "conventional-commits"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/git-commit.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

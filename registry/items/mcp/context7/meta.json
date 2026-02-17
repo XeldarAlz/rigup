@@ -1,0 +1,17 @@
+{
+  "name": "context7",
+  "type": "mcp",
+  "version": "1.0.0",
+  "description": "Context7 MCP for up-to-date library documentation",
+  "author": "xeldar",
+  "tags": ["documentation", "libraries", "context", "up-to-date"],
+  "files": [],
+  "dependencies": [],
+  "conflicts": [],
+  "mcp": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/context7-mcp-server"]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "pr-review",
+  "type": "skill",
+  "version": "1.0.0",
+  "description": "PR review workflow — /pr-review [number]",
+  "author": "xeldar",
+  "tags": ["github", "pr", "review", "code-quality"],
+  "files": [
+    { "path": "skill.md", "target": ".claude/skills/pr-review.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}

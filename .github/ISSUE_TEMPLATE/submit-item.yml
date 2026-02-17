@@ -1,0 +1,43 @@
+name: Submit Registry Item
+description: Submit a new agent, skill, hook, template, MCP config, or settings fragment
+title: "[Submit]: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the rigup registry! Please fill out the details below.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Item Type
+      options:
+        - agent
+        - skill
+        - hook
+        - claude-md
+        - mcp
+        - settings
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Item Name
+      description: Short, kebab-case name (e.g., "react-expert")
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this item do?
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Item Content
+      description: Paste your meta.json and any associated files.
+    validations:
+      required: true

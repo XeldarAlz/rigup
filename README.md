@@ -112,7 +112,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ### Contributing Items to the Registry
 
-Want to share your agents, skills, or hooks with the community? Submit them to the [rigup-registry](https://github.com/XeldarAlz/rigup-registry).
+Want to share your agents, skills, or hooks with the community? Add them to the `registry/items/` directory and open a PR.
 
 ## Philosophy
 

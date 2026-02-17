@@ -1,0 +1,21 @@
+{
+  "name": "strict",
+  "type": "settings",
+  "version": "1.0.0",
+  "description": "Strict permissions — explicit approval required for all actions",
+  "author": "xeldar",
+  "tags": ["permissions", "strict", "security", "safe"],
+  "files": [],
+  "dependencies": [],
+  "conflicts": ["permissive"],
+  "settings": {
+    "permissions": {
+      "allow": [],
+      "deny": [
+        "Bash(*)",
+        "Edit(*)",
+        "Write(*)"
+      ]
+    }
+  }
+}

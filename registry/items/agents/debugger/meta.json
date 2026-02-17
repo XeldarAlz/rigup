@@ -1,0 +1,13 @@
+{
+  "name": "debugger",
+  "type": "agent",
+  "version": "1.0.0",
+  "description": "Debugging specialist — diagnose root causes, minimal fixes",
+  "author": "xeldar",
+  "tags": ["debug", "diagnosis", "bugfix", "troubleshoot"],
+  "files": [
+    { "path": "agent.md", "target": ".claude/agents/debugger.md" }
+  ],
+  "dependencies": [],
+  "conflicts": []
+}
